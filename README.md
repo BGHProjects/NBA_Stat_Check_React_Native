@@ -1,11 +1,10 @@
-# Sample Snack app
+# NBA Stat Check React Native App
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by clicking the **Run** button or use the simulator by clicking **Tap to Play**. When you're done, click **Save** and share the link!
+A web app built with React Native and Expo that compares stats of NBA players.
+REST API calls are used for the BallDontLie API (https://www.balldontlie.io/#introduction).
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Export** your project and use it with [expo-cli](https://docs.expo.io/versions/latest/introduction/installation.html).
+Type in the player name and a season that they played in (in the form of YYYY which represents the year the season started (e.g. 2019 for 19/20 season)), and the app will return that player's Points, Rebounds, Assists, Blocks and Steals for that season to 2 decimal places.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the **Embed** button.
+If you select Compare, you can fill in the same details for a different player, or the same player during a different season, and the second search returns the same statistics, except that of the two, whoever has the higher number in the respective category is highlighted in green. 
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
-
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
+App will return alerts for player names that don't match any within the database, if the name enterd is not specific enough, or if a season is entered that the player searched for didn't play in. 
